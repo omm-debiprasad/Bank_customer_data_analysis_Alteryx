@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\*2021_*.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>*2021_*.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CIF Id" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="first_name" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="last_name" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="DOB" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="email" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Mobile No" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="gender" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Salary" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="PAN" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Credit Card" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Home Loan" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Car Loan" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Insurance" size="254" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="CIF Id" selected="True" />
+            <Field field="first_name" selected="True" />
+            <Field field="last_name" selected="True" />
+            <Field field="DOB" selected="True" />
+            <Field field="email" selected="True" />
+            <Field field="Mobile No" selected="True" />
+            <Field field="gender" selected="True" />
+            <Field field="Salary" selected="True" />
+            <Field field="PAN" selected="True" />
+            <Field field="Credit Card" selected="True" />
+            <Field field="Home Loan" selected="True" />
+            <Field field="Car Loan" selected="True" />
+            <Field field="Insurance" selected="True" />
+            <Field field="FileName" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CIF Id" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Int64" />
+            <Field name="first_name" size="14" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="last_name" size="25" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="DOB" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Date" />
+            <Field name="email" size="39" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Mobile No" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Int64" />
+            <Field name="gender" size="11" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="V_String" />
+            <Field name="Salary" size="9" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="String" />
+            <Field name="PAN" size="10" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="String" />
+            <Field name="Credit Card" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Byte" />
+            <Field name="Home Loan" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Byte" />
+            <Field name="Car Loan" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Byte" />
+            <Field name="Insurance" source="File: C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Feb2021_1.csv" type="Byte" />
+            <Field name="FileName" size="9" source="File: FileName" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ommde\AppData\Local\Temp\Engine_1096_0aa9936b46bdcb4e88b7234330652afd_\Engine_1096_6e6fdb441737f74f89cc80c81ee48c0b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[first_name]+' '+[last_name]" field="Name" size="64" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Name = [first_name]+' '+[last_name]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Full Name" selected="False" />
+            <SelectField field="first_name" selected="False" />
+            <SelectField field="last_name" selected="False" />
+            <SelectField field="DOB" selected="True" />
+            <SelectField field="email" selected="True" />
+            <SelectField field="gender" selected="True" />
+            <SelectField field="Address" selected="True" />
+            <SelectField field="Mobile" selected="True" />
+            <SelectField field="Salary" selected="True" />
+            <SelectField field="PAN" selected="True" />
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="CIF Id" selected="True" />
+            <SelectField field="Mobile No" selected="True" />
+            <SelectField field="Credit Card" selected="True" />
+            <SelectField field="Home Loan" selected="True" />
+            <SelectField field="Car Loan" selected="True" />
+            <SelectField field="Insurance" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="486" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>PAN</Field>
+          <RegExExpression value="\u{5}\d{4}\u{1}" />
+          <CaseInsensitve value="False" />
+          <Method>Match</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>PAN</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Correct_PAN</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="630" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>email</Field>
+          <RegExExpression value="\w*@\w*.*\l*" />
+          <CaseInsensitve value="True" />
+          <Method>Match</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>email</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Correct_email</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([Salary], '$', '')" field="MAB" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MAB = ReplaceChar([Salary], '$', '')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="DOB" selected="True" />
+            <SelectField field="email" selected="True" />
+            <SelectField field="gender" selected="True" />
+            <SelectField field="MAB" selected="True" type="FixedDecimal" size="8.2" />
+            <SelectField field="Salary" selected="False" type="FixedDecimal" size="8.2" />
+            <SelectField field="PAN" selected="True" />
+            <SelectField field="FileName" selected="True" />
+            <SelectField field="CIF Id" selected="True" />
+            <SelectField field="Mobile No" selected="True" />
+            <SelectField field="Credit Card" selected="True" />
+            <SelectField field="Home Loan" selected="True" />
+            <SelectField field="Car Loan" selected="True" />
+            <SelectField field="Insurance" selected="True" />
+            <SelectField field="Correct_PAN" selected="True" />
+            <SelectField field="Correct_email" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="894" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [MAB]&lt;=3000 THEN 'Executive' ELSEIF [MAB]&lt;=5000 THEN 'Manager' ELSEif [MAB]&lt;= 7500 THEN 'Mid-Manage' ELSE 'Senior-Manager' ENDIF" field="Customer Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customer Type = IF [MAB]&lt;=3000 THEN 'Executive' ELSEIF [MAB]&lt;=5000 THEN 'Manager...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1218" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\ommde\OneDrive\Desktop\Portfolio Project on Covid Data\Sales Pitch\Output.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>FileName</MultiFileType>
+          <MultiFileField>Customer Type</MultiFileField>
+          <KeepField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1074" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Credit Card]=0 THEN 'Yes' ELSE 'No' ENDIF" field="Pitch CC" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [MAB]&gt;=5000 and [Insurance] = 0 THEN 'Yes' ELSEIF [MAB]&lt;5000 AND [Insurance]=0 THEN 'Try' ELSE 'No' ENDIF" field="Pitch Insurance" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Pitch CC = IF [Credit Card]=0 THEN 'Yes' ELSE 'No' ENDIF
+Pitch Insurance = IF [M...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>main</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d3c9ac14-0f11-4533-b374-2685e2bb5ae4" />
+      <Telemetry>
+        <PreviousWorkflowId value="d1e994f9-a957-41cf-a63a-74aee98c5a68" />
+        <OriginWorkflowId value="d1e994f9-a957-41cf-a63a-74aee98c5a68" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
